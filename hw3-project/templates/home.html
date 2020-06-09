@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>Taaha Motorwala HW3</title>
+</head>
+<body></body>
+    <h1>Monte Carlo Simulation</h1>
+
+     <form action="{% url 'monte_carlo_simulation' %}" method="GET">
+        <label>Tikr Symbol: </label>
+        <input type="text" size="5" name="tikr_symbol" value= "{{ x }}"/><br />
+        <br/><label>Duration: </label>
+        <input type="text" size="5" name="duration" value= "{{ y }}"/><br />
+        <br/><input type="reset" value="Clear entry" />
+        <input type="submit" name="button" value="Calculate Payment"/>
+        <h1>Monte Carlo Estimate for {{tikr_symbol}}: {{estimate|floatformat:2}}</h1>
+</body>
