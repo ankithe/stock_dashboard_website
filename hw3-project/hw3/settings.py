@@ -25,7 +25,7 @@ SECRET_KEY = '7&^2(xsbp7=q1-9z2@^uvqm#veghk7yd@i!1#g1h!e-$@v$_48'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['financial-analysis-env.eba-dvuan29a.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition

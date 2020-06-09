@@ -60,38 +60,9 @@ def monte_carlo_simulation(request):
 
     data = {
         'estimate': end_of_year_estimation,
-        'tikr_symbol': ticker_symbol.capitalize()
+        'tikr_symbol': ticker_symbol.upper()
     }
 
     return render(request, 'home.html', data)
 
-# def calcPmt(request):
-#
-#     operation = Message = ''
-#     Payment = " "
-#     try:
-#         operation = request.GET['button']
-#         str1 = request.GET['Cost']
-#         str2 = request.GET['APR']
-#         str3 = request.GET['Term']
-#
-#         PV = float(str1)
-#         r = (float(str2)/12)/100
-#         n = int(str3)*12
-#
-#         Payment = (r*PV)/(1-(1+r)**-n)
-#
-#
-#     except:
-#         PV = r = n = " "
-#         Message = " Please enter valid values for all parameters"
-#
-#     data = {
-#             'Cost': PV,
-#             'APR': r*1000,
-#             'Term': n,
-#             'Payment': Payment,
-#             'Message': Message
-#             }
-#
-#     return render(request, 'home.html', data)
+
